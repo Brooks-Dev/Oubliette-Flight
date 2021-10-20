@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private float _playerVelocity = 3.0f, _jumpVelocity = 4f;
     [SerializeField]
     private float _distToGround = 0.75f;
+    private bool _playerGrounded;
     private float _horizontal, _vertical;
     private PlayerAnimation _playerAnim;
     private bool _isJumping = false;
@@ -31,13 +32,15 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _playerGrounded = Physics2D.Raycast(transform.position, Vector2.down, _distToGround, LayerMask.GetMask("Ground"));
+        Attacks();
         Movement();
     }
 
     void Movement()
     {
         _vertical = _rigidbody.velocity.y;
-        if (Physics2D.Raycast(transform.position, Vector2.down, _distToGround, LayerMask.GetMask("Ground")))
+        if (_playerGrounded == true)
         {
             Debug.DrawRay(transform.position, Vector2.down * _distToGround, Color.yellow);
             if (_isJumping == false)
@@ -59,6 +62,14 @@ public class Player : MonoBehaviour
         }
 
         _rigidbody.velocity = new Vector2(_horizontal, _vertical);
+    }
+
+    void Attacks()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            _playerAnim.Attack();
+        }
     }
 
     IEnumerator PlayerJumps()
