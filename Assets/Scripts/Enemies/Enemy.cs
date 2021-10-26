@@ -7,21 +7,63 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected int health;
     [SerializeField]
-    protected int speed;
+    protected float speed;
     [SerializeField]
     protected int gems;
     [SerializeField]
     protected Transform pointA, pointB;
-    [SerializeField]
-    protected Transform target;
-    [SerializeField]
-    protected Transform newTarget;
+
+    protected Vector2 target;
     protected Animator anim;
     protected SpriteRenderer spriteRenderer;
+
+    public virtual void Init()
+    {
+        anim = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        target = pointA.position;
+    }
+
+    private void Start()
+    {
+        Init();
+    }
+
+    public virtual void Update()
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            return;
+        }
+        MoveMonster();
+    }
+
+    public virtual void MoveMonster()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (Vector2.Distance(target, pointA.position) == 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if (transform.position == pointA.position)
+        {
+            target = pointB.position;
+            anim.SetTrigger("Idle");
+        }
+        else if (transform.position == pointB.position)
+        {
+            target = pointA.position;
+            anim.SetTrigger("Idle");
+        }
+    }
     public virtual void Attack()
     {
         Debug.Log("Base attack for " + this.gameObject.name);
     }
 
-    public abstract void Update();
 }
