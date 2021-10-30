@@ -16,6 +16,7 @@ public abstract class Enemy : MonoBehaviour
     protected Vector2 target;
     protected Animator anim;
     protected SpriteRenderer spriteRenderer;
+    protected bool IsHit;
 
     public virtual void Init()
     {
@@ -40,7 +41,11 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void MoveMonster()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        if (IsHit == false)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        }
+
         if (Vector2.Distance(target, pointA.position) == 0)
         {
             spriteRenderer.flipX = true;
