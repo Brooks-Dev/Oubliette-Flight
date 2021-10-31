@@ -13,13 +13,15 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected Transform pointA, pointB;
 
-    protected Vector2 target;
+    protected Vector3 target;
     protected Animator anim;
     protected SpriteRenderer spriteRenderer;
     protected bool IsHit;
+    protected Transform player;
 
     public virtual void Init()
     {
+        player = GameObject.Find("Player").GetComponent<Player>().transform; 
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         target = pointA.position;
@@ -32,7 +34,27 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        float distToPlayer = Vector3.Distance(player.position, transform.position);
+        if (distToPlayer > 2.0f)
+        {
+            IsHit = false;
+            anim.SetBool("InCombat", false);
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+            Vector3 direction = (player.position - transform.position);
+            if (direction.x < 0f)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
+            anim.SetBool("InCombat", true);
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             return;
         }
@@ -46,7 +68,7 @@ public abstract class Enemy : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
 
-        if (Vector2.Distance(target, pointA.position) == 0)
+        if (Vector3.Distance(target, pointA.position) == 0)
         {
             spriteRenderer.flipX = true;
         }
@@ -68,7 +90,7 @@ public abstract class Enemy : MonoBehaviour
     }
     public virtual void Attack()
     {
-        Debug.Log("Base attack for " + this.gameObject.name);
+        
     }
 
 }

@@ -20,5 +20,6 @@ public class Skeleton : Enemy, IDamagable
             Destroy(this.gameObject);
         }
         anim.SetTrigger("Hit");
+        anim.SetBool("InCombat", true);
     }
 }

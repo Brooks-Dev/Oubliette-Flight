@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamagable
 {
     private Rigidbody2D _rigidbody;
     [SerializeField]
@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private float _horizontal, _vertical;
     private PlayerAnimation _playerAnim;
     private bool _isJumping = false;
+    public int Health { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -77,5 +78,10 @@ public class Player : MonoBehaviour
         _isJumping = true;
         yield return new WaitForSeconds(0.1f);
         _isJumping = false;
+    }
+
+    public void Damage()
+    {
+        Debug.Log("Player is hit!");
     }
 }
