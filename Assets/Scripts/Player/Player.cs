@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, IDamagable
     private float _playerVelocity = 3.0f, _jumpVelocity = 4f;
     [SerializeField]
     private float _distToGround = 0.75f;
+    [SerializeField]
+    private int _diamonds;
     private bool _playerGrounded;
     private float _horizontal, _vertical;
     private PlayerAnimation _playerAnim;
@@ -83,5 +85,10 @@ public class Player : MonoBehaviour, IDamagable
     public void Damage()
     {
         Debug.Log("Player is hit!");
+    }
+
+    public void GetDiamond()
+    {
+        _diamonds++;
     }
 }

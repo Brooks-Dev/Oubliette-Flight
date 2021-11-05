@@ -12,6 +12,9 @@ public abstract class Enemy : MonoBehaviour
     protected int gems;
     [SerializeField]
     protected Transform pointA, pointB;
+    [SerializeField]
+    protected GameObject diamond;
+    protected bool IsDead;
 
     protected Vector3 target;
     protected Animator anim;
@@ -35,26 +38,29 @@ public abstract class Enemy : MonoBehaviour
     public virtual void Update()
     {
         float distToPlayer = Vector3.Distance(player.position, transform.position);
-        if (distToPlayer > 2.0f)
+        if (distToPlayer > 1.0f)
         {
             IsHit = false;
             anim.SetBool("InCombat", false);
         }
         else
         {
-            spriteRenderer.flipX = false;
-            Vector3 direction = (player.position - transform.position);
-            if (direction.x < 0f)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else
+            if (IsDead == false)
             {
                 spriteRenderer.flipX = false;
+                Vector3 direction = (player.position - transform.position);
+                if (direction.x < 0f)
+                {
+                    spriteRenderer.flipX = true;
+                }
+                else
+                {
+                    spriteRenderer.flipX = false;
+                }
+                anim.SetBool("InCombat", true);
             }
-            anim.SetBool("InCombat", true);
         }
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        if (IsDead == true || anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             return;
         }
@@ -88,9 +94,4 @@ public abstract class Enemy : MonoBehaviour
             anim.SetTrigger("Idle");
         }
     }
-    public virtual void Attack()
-    {
-        
-    }
-
 }
