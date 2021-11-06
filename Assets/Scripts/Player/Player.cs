@@ -10,7 +10,7 @@ public class Player : MonoBehaviour, IDamagable
     [SerializeField]
     private float _distToGround = 0.75f;
     [SerializeField]
-    private int _diamonds;
+    public int diamonds;
     private bool _playerGrounded;
     private float _horizontal, _vertical;
     private PlayerAnimation _playerAnim;
@@ -89,6 +89,6 @@ public class Player : MonoBehaviour, IDamagable
 
     public void GetDiamond()
     {
-        _diamonds++;
+        diamonds++;
     }
 }
