@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour, IDamagable
 {
@@ -15,7 +16,10 @@ public class Player : MonoBehaviour, IDamagable
     private float _horizontal, _vertical;
     private PlayerAnimation _playerAnim;
     private bool _isJumping = false;
+    public bool InShop;
+    [SerializeField]
     public int Health { get; set; }
+    public bool PlayerIsDead;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +34,13 @@ public class Player : MonoBehaviour, IDamagable
         {
             Debug.LogError("Rigidbody on player is null!");
         }
+        Health = 4;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (PlayerIsDead == true) return;
         _playerGrounded = Physics2D.Raycast(transform.position, Vector2.down, _distToGround, LayerMask.GetMask("Ground"));
         Attacks();
         Movement();
@@ -51,16 +57,37 @@ public class Player : MonoBehaviour, IDamagable
                 _playerAnim.Jumping(_isJumping);
             }
             //player can move left and right
-            _horizontal = Input.GetAxisRaw("Horizontal") * _playerVelocity;
+            if (Application.isEditor)
+            {
+                _horizontal = Input.GetAxisRaw("Horizontal") * _playerVelocity;
+            }
+            else
+            {
+                _horizontal = CrossPlatformInputManager.GetAxis("Horizontal") * _playerVelocity;
+            }
             _playerAnim.Move(_horizontal);
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Application.isEditor)
             {
-                //Player jumps up
-                _vertical += _jumpVelocity;
-                StartCoroutine(PlayerJumps());
-                _playerAnim.Jumping(_isJumping);
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    //Player jumps up
+                    _vertical += _jumpVelocity;
+                    StartCoroutine(PlayerJumps());
+                    _playerAnim.Jumping(_isJumping);
+                }
             }
+            else
+            {
+                if (CrossPlatformInputManager.GetButtonDown("B_Button"))
+                {
+                    //Player jumps up
+                    _vertical += _jumpVelocity;
+                    StartCoroutine(PlayerJumps());
+                    _playerAnim.Jumping(_isJumping);
+                }
+            }
+
 
         }
 
@@ -69,9 +96,22 @@ public class Player : MonoBehaviour, IDamagable
 
     void Attacks()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (InShop == false)
         {
-            _playerAnim.Attack();
+            if (Application.isEditor)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    _playerAnim.Attack();
+                }
+            }
+            else
+            {
+                if (CrossPlatformInputManager.GetButtonDown("A_Button"))
+                {
+                    _playerAnim.Attack();
+                }
+            }
         }
     }
 
@@ -84,11 +124,20 @@ public class Player : MonoBehaviour, IDamagable
 
     public void Damage()
     {
-        Debug.Log("Player is hit!");
+        if (PlayerIsDead == true) return;
+        Health--;
+        if (Health <= 0)
+        {
+            Debug.Log("Player dies");
+            _playerAnim.PlayerDies();
+            PlayerIsDead = true;
+        }
+        UIManager.Instance.UpdateLives(Health);
     }
 
     public void GetDiamond()
     {
         diamonds++;
+        UIManager.Instance.UpdateGemCount(diamonds);
     }
 }

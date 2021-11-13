@@ -20,11 +20,11 @@ public abstract class Enemy : MonoBehaviour
     protected Animator anim;
     protected SpriteRenderer spriteRenderer;
     protected bool IsHit;
-    protected Transform player;
+    protected Player player;
 
     public virtual void Init()
     {
-        player = GameObject.Find("Player").GetComponent<Player>().transform; 
+        player = GameObject.Find("Player").GetComponent<Player>(); 
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         target = pointA.position;
@@ -37,18 +37,18 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
-        float distToPlayer = Vector3.Distance(player.position, transform.position);
-        if (distToPlayer > 1.0f)
+        float distToPlayer = Vector3.Distance(player.transform.position, transform.position);
+        if (distToPlayer > 1.0f || player.PlayerIsDead == true)
         {
             IsHit = false;
             anim.SetBool("InCombat", false);
         }
         else
         {
-            if (IsDead == false)
+            if (IsDead == false && player.PlayerIsDead == false)
             {
                 spriteRenderer.flipX = false;
-                Vector3 direction = (player.position - transform.position);
+                Vector3 direction = (player.transform.position - transform.position);
                 if (direction.x < 0f)
                 {
                     spriteRenderer.flipX = true;
