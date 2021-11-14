@@ -135,9 +135,9 @@ public class Player : MonoBehaviour, IDamagable
         UIManager.Instance.UpdateLives(Health);
     }
 
-    public void GetDiamond()
+    public void GetDiamond(int count)
     {
-        diamonds++;
+        diamonds += count;
         UIManager.Instance.UpdateGemCount(diamonds);
     }
 }
