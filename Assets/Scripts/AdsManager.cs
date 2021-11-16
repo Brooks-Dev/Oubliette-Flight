@@ -9,11 +9,9 @@ public class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLis
     private const string _adUnitID = "OF_Shop_Ad";
     [SerializeField]
     private Button _shopButton;
-    private Player _player;
 
     void Awake()
     {
-        _player = GameObject.Find("Player").GetComponent<Player>();
         _shopButton.interactable = false;
     }
 
@@ -69,7 +67,8 @@ public class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLis
         {
             case UnityAdsShowCompletionState.COMPLETED:
                 Debug.Log("Player gets 100G");
-                _player.GetDiamond(100);
+                GameManager.Instance.GetDiamond(100);
+                UIManager.Instance.OpenShop(GameManager.Instance.Player.diamonds);
                 StartCoroutine(ReloadAd());
                 break;
             case UnityAdsShowCompletionState.SKIPPED:

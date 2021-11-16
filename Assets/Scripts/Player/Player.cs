@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour, IDamagable
@@ -122,6 +123,12 @@ public class Player : MonoBehaviour, IDamagable
         _isJumping = false;
     }
 
+    public void GetDiamond(int count)
+    {
+        diamonds += count;
+        UIManager.Instance.UpdateGemCount(diamonds);
+    }
+
     public void Damage()
     {
         if (PlayerIsDead == true) return;
@@ -131,13 +138,14 @@ public class Player : MonoBehaviour, IDamagable
             Debug.Log("Player dies");
             _playerAnim.PlayerDies();
             PlayerIsDead = true;
+            StartCoroutine(ReturnToMainMenu());
         }
         UIManager.Instance.UpdateLives(Health);
     }
 
-    public void GetDiamond(int count)
+    private IEnumerator ReturnToMainMenu()
     {
-        diamonds += count;
-        UIManager.Instance.UpdateGemCount(diamonds);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("Main_Menu");
     }
 }

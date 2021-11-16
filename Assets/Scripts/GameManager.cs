@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
@@ -19,8 +20,17 @@ public class GameManager : MonoBehaviour
     }
 
     public bool HasKeyCastle { get; set; }
+    public Player Player { get; private set; }
+
     private void Awake()
     {
         _instance = this;
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
+
+    public void GetDiamond(int count)
+    {
+        Player.diamonds += count;
+        UIManager.Instance.UpdateGemCount(Player.diamonds);
     }
 }
