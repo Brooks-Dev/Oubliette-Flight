@@ -25,7 +25,7 @@ public class Player : MonoBehaviour, IDamagable
     // Start is called before the first frame update
     void Start()
     {
-        _playerAnim = GetComponent<PlayerAnimation>();
+        _playerAnim = GetComponentInChildren<PlayerAnimation>();
         if (_playerAnim == null)
         {
             Debug.LogError("Player animation is null in player!");
@@ -103,14 +103,14 @@ public class Player : MonoBehaviour, IDamagable
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    _playerAnim.Attack();
+                    _playerAnim.Attack(_playerGrounded);
                 }
             }
             else
             {
                 if (CrossPlatformInputManager.GetButtonDown("A_Button"))
                 {
-                    _playerAnim.Attack();
+                    _playerAnim.Attack(_playerGrounded);
                 }
             }
         }
@@ -138,6 +138,7 @@ public class Player : MonoBehaviour, IDamagable
             Debug.Log("Player dies");
             _playerAnim.PlayerDies();
             PlayerIsDead = true;
+            _rigidbody.velocity = new Vector2(0, _vertical);
             StartCoroutine(ReturnToMainMenu());
         }
         UIManager.Instance.UpdateLives(Health);

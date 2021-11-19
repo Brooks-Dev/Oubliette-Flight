@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     }
 
     public bool HasKeyCastle { get; set; }
+    public bool FlamingSword { get; set; }
+    public bool BootsOfFlight { get; set; }
     public Player Player { get; private set; }
 
     private void Awake()

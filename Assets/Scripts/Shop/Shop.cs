@@ -60,6 +60,20 @@ public class Shop : MonoBehaviour
         {
             if ( _player.diamonds >= ItemCost[_selectedItem])
             {
+                switch (_selectedItem)
+                {
+                    case 3:
+                        GameManager.Instance.HasKeyCastle = true;
+                        break;
+                    case 2:
+                        GameManager.Instance.BootsOfFlight = true;
+                        break;
+                    case 1:
+                        GameManager.Instance.FlamingSword = true;
+                        break;
+                    default:
+                        break;
+                }
                 if (_selectedItem == 3)
                 {
                     GameManager.Instance.HasKeyCastle = true;
