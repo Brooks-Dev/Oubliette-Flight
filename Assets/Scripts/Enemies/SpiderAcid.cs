@@ -20,7 +20,7 @@ public class SpiderAcid : MonoBehaviour
             IDamagable hit = other.GetComponent<IDamagable>();
             if (hit != null)
             {
-                hit.Damage();
+                hit.Damage(1);
                 Destroy(this.gameObject);
             } 
         }

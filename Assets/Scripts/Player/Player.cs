@@ -129,10 +129,10 @@ public class Player : MonoBehaviour, IDamagable
         UIManager.Instance.UpdateGemCount(diamonds);
     }
 
-    public void Damage()
+    public void Damage(int pain)
     {
         if (PlayerIsDead == true) return;
-        Health--;
+        Health -= pain;
         if (Health <= 0)
         {
             Debug.Log("Player dies");

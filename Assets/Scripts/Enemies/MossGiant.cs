@@ -12,13 +12,13 @@ public class MossGiant : Enemy, IDamagable
         Health = base.health;
     }
 
-    public void Damage()
+    public void Damage(int pain)
     {
         if (IsDead == true)
         {
             return;
         }
-        Health--;
+        Health -= pain;
         IsHit = true;
         if (Health <= 0)
         {

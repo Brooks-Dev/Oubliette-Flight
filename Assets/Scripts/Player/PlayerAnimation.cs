@@ -53,19 +53,29 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Attack(bool grounded)
     {
+        if (GameManager.Instance.FlamingSword == true)
+        {
+            _animator.SetBool("Flaming_Sword", true);
+        }
+        else
+        {
+            _animator.SetBool("Flaming_Sword", false);
+        }
         if (grounded == true)
         {
             if (_renderer.flipX == true)
             {
                 _swordRenderer.flipX = true;
                 _swordRenderer.flipY = true;
-                _swordRenderer.transform.localEulerAngles = new Vector3(110f, 50f, -84f);
+                _swordRenderer.transform.localPosition = new Vector3(0.09f, 0, 0);
+                _swordRenderer.transform.localEulerAngles = new Vector3(250f, 50f, -150f);
             }
             else
             {
                 _swordRenderer.flipX = false;
                 _swordRenderer.flipY = false;
-                _swordRenderer.transform.localEulerAngles = new Vector3(66f, 50f, -84f);
+                _swordRenderer.transform.localPosition = new Vector3(-0.09f, 0, 0);
+                _swordRenderer.transform.localEulerAngles = new Vector3(75f, 50f, -150f);
             }
             _swordAnimator.SetBool("Jump", false);
 
@@ -74,27 +84,26 @@ public class PlayerAnimation : MonoBehaviour
         {
             if (_renderer.flipX == true)
             {
-                _swordRenderer.transform.localEulerAngles = new Vector3(110f, 50f, -84f);
                 if (_renderer.flipX == true)
                 {
                     _swordRenderer.flipX = false;
                     _swordRenderer.flipY = true;
+                    _swordRenderer.transform.localPosition = new Vector3(0.09f, 0.2f, 0);
                     _swordRenderer.transform.localEulerAngles = new Vector3(110f, 50f, -84f);
                 }
             }
             else
             {
-                _swordRenderer.flipX = !_swordRenderer.flipX;
                 if (_renderer.flipX == false)
                 {
                     _swordRenderer.flipX = true;
                     _swordRenderer.flipY = false;
+                    _swordRenderer.transform.localPosition = new Vector3(-0.09f, 0.2f, 0);
                     _swordRenderer.transform.localEulerAngles = new Vector3(66f, 50f, -84f);
                 }
             }
             _swordAnimator.SetBool("Jump", true);
         }
-        Debug.Log("Animator attack state: " + _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"));
         if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             _swordAnimator.SetTrigger("SwordAnimation");

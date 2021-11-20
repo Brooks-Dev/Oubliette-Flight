@@ -10,7 +10,15 @@ public class Attack : MonoBehaviour
         IDamagable hit = other.GetComponent<IDamagable>();
         if (hit != null && _hitInSwing == false)
         {
-            hit.Damage();
+            int pain = 1;
+            if (!other.CompareTag("Player"))
+            {
+                if (GameManager.Instance.FlamingSword == true)
+                {
+                    pain++;
+                }
+            }
+            hit.Damage(pain);
             _hitInSwing = true;
             StartCoroutine(SwingHitCooldown());
         }
