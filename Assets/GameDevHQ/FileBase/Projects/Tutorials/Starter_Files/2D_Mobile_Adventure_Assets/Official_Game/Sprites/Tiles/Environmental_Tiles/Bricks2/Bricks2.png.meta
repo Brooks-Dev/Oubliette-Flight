@@ -191,8 +191,194 @@ TextureImporter:
   - first:
       213: 21300124
     second: Bricks2_62
+  - first:
+      213: 1094658077166654996
+    second: Bricks2_0
+  - first:
+      213: 6353130401400360225
+    second: Bricks2_1
+  - first:
+      213: 3411646987375838271
+    second: Bricks2_2
+  - first:
+      213: 7710990108727161049
+    second: Bricks2_3
+  - first:
+      213: 5610898785499088491
+    second: Bricks2_4
+  - first:
+      213: -1614352216719765766
+    second: Bricks2_5
+  - first:
+      213: -3751536179744914633
+    second: Bricks2_6
+  - first:
+      213: 1563776348451325040
+    second: Bricks2_7
+  - first:
+      213: 969560087691763635
+    second: Bricks2_8
+  - first:
+      213: 246505757392734172
+    second: Bricks2_9
+  - first:
+      213: -3508959977676567221
+    second: Bricks2_10
+  - first:
+      213: 2676233158216184422
+    second: Bricks2_11
+  - first:
+      213: 463804854304818445
+    second: Bricks2_12
+  - first:
+      213: 4935193872242889889
+    second: Bricks2_13
+  - first:
+      213: -444656373335525703
+    second: Bricks2_14
+  - first:
+      213: -7135561118789416913
+    second: Bricks2_15
+  - first:
+      213: -5205454606355617131
+    second: Bricks2_16
+  - first:
+      213: -5580064811783596083
+    second: Bricks2_17
+  - first:
+      213: 5725561147754457116
+    second: Bricks2_18
+  - first:
+      213: -5428746593680494510
+    second: Bricks2_19
+  - first:
+      213: -5446328623578466813
+    second: Bricks2_20
+  - first:
+      213: -5905269114618362985
+    second: Bricks2_21
+  - first:
+      213: -1105685483834351358
+    second: Bricks2_22
+  - first:
+      213: 7452571023479511013
+    second: Bricks2_23
+  - first:
+      213: -6025248779453454199
+    second: Bricks2_24
+  - first:
+      213: 810162496223611715
+    second: Bricks2_25
+  - first:
+      213: -76992400900184372
+    second: Bricks2_26
+  - first:
+      213: 4280235377205434920
+    second: Bricks2_27
+  - first:
+      213: -4207008647175310221
+    second: Bricks2_28
+  - first:
+      213: 4689096404865425226
+    second: Bricks2_29
+  - first:
+      213: -6171842344699763768
+    second: Bricks2_30
+  - first:
+      213: -4266007931518964793
+    second: Bricks2_31
+  - first:
+      213: 4530115416217246972
+    second: Bricks2_32
+  - first:
+      213: 1451184470486120427
+    second: Bricks2_33
+  - first:
+      213: -2478666347558627103
+    second: Bricks2_34
+  - first:
+      213: 8503601402279890746
+    second: Bricks2_35
+  - first:
+      213: -221066663699426622
+    second: Bricks2_36
+  - first:
+      213: -299073765116091432
+    second: Bricks2_37
+  - first:
+      213: 2471044091927893261
+    second: Bricks2_38
+  - first:
+      213: 9028375531846601480
+    second: Bricks2_39
+  - first:
+      213: 2604690241049762221
+    second: Bricks2_40
+  - first:
+      213: -4428207706476670184
+    second: Bricks2_41
+  - first:
+      213: -8910214249059895566
+    second: Bricks2_42
+  - first:
+      213: 6293070926398732950
+    second: Bricks2_43
+  - first:
+      213: -8901057766365965392
+    second: Bricks2_44
+  - first:
+      213: -6199624524702935530
+    second: Bricks2_45
+  - first:
+      213: 3069903133587672603
+    second: Bricks2_46
+  - first:
+      213: -1175515666176356659
+    second: Bricks2_47
+  - first:
+      213: 4903668523096880343
+    second: Bricks2_48
+  - first:
+      213: 1459122222881320385
+    second: Bricks2_49
+  - first:
+      213: 8831476331822642976
+    second: Bricks2_50
+  - first:
+      213: 7919065174378831605
+    second: Bricks2_51
+  - first:
+      213: -8411839461721401451
+    second: Bricks2_52
+  - first:
+      213: 2434997600226111345
+    second: Bricks2_53
+  - first:
+      213: -8912078365181372056
+    second: Bricks2_54
+  - first:
+      213: -5538506323128128929
+    second: Bricks2_55
+  - first:
+      213: -2422677955048019535
+    second: Bricks2_56
+  - first:
+      213: 3697312864940841441
+    second: Bricks2_57
+  - first:
+      213: -789187148901662010
+    second: Bricks2_58
+  - first:
+      213: 3809676339374818189
+    second: Bricks2_59
+  - first:
+      213: -1104309294948876516
+    second: Bricks2_60
+  - first:
+      213: 5276657369773907295
+    second: Bricks2_61
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -212,6 +398,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -220,12 +407,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -243,9 +430,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -325,8 +516,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: 416d700b8b1013f00800000000000000
+      internalID: 1094658077166654996
       vertices: []
       indices: 
       edges: []
@@ -346,8 +537,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: 12d0433907ada2850800000000000000
+      internalID: 6353130401400360225
       vertices: []
       indices: 
       edges: []
@@ -367,8 +558,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: f34819dfbda985f20800000000000000
+      internalID: 3411646987375838271
       vertices: []
       indices: 
       edges: []
@@ -388,8 +579,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 9d0bb3936a0f20b60800000000000000
+      internalID: 7710990108727161049
       vertices: []
       indices: 
       edges: []
@@ -409,8 +600,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: b660854b7baeddd40800000000000000
+      internalID: 5610898785499088491
       vertices: []
       indices: 
       edges: []
@@ -430,8 +621,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: afecd0c463ba899e0800000000000000
+      internalID: -1614352216719765766
       vertices: []
       indices: 
       edges: []
@@ -451,8 +642,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: 733474498bddfebc0800000000000000
+      internalID: -3751536179744914633
       vertices: []
       indices: 
       edges: []
@@ -461,8 +652,8 @@ TextureImporter:
       name: Bricks2_7
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1792
+        x: 0
+        y: 1536
         width: 256
         height: 256
       alignment: 0
@@ -472,8 +663,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 074499dbd46a3b510800000000000000
+      internalID: 1563776348451325040
       vertices: []
       indices: 
       edges: []
@@ -482,7 +673,7 @@ TextureImporter:
       name: Bricks2_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1536
         width: 256
         height: 256
@@ -493,8 +684,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
+      spriteID: 3bf934743c1947d00800000000000000
+      internalID: 969560087691763635
       vertices: []
       indices: 
       edges: []
@@ -503,7 +694,7 @@ TextureImporter:
       name: Bricks2_9
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1536
         width: 256
         height: 256
@@ -514,8 +705,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
+      spriteID: cd78b782ea3cb6300800000000000000
+      internalID: 246505757392734172
       vertices: []
       indices: 
       edges: []
@@ -524,7 +715,7 @@ TextureImporter:
       name: Bricks2_10
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1536
         width: 256
         height: 256
@@ -535,8 +726,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43305410000000000800000000000000
-      internalID: 21300020
+      spriteID: b4d8687dd7bad4fc0800000000000000
+      internalID: -3508959977676567221
       vertices: []
       indices: 
       edges: []
@@ -545,7 +736,7 @@ TextureImporter:
       name: Bricks2_11
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1024
         y: 1536
         width: 256
         height: 256
@@ -556,8 +747,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63305410000000000800000000000000
-      internalID: 21300022
+      spriteID: 662f89bc0e3e32520800000000000000
+      internalID: 2676233158216184422
       vertices: []
       indices: 
       edges: []
@@ -566,7 +757,7 @@ TextureImporter:
       name: Bricks2_12
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 1536
         width: 256
         height: 256
@@ -577,8 +768,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
+      spriteID: d05c0f1ce04cf6600800000000000000
+      internalID: 463804854304818445
       vertices: []
       indices: 
       edges: []
@@ -587,7 +778,7 @@ TextureImporter:
       name: Bricks2_13
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 1536
         width: 256
         height: 256
@@ -598,8 +789,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
+      spriteID: 1a4d8b4dda45d7440800000000000000
+      internalID: 4935193872242889889
       vertices: []
       indices: 
       edges: []
@@ -608,8 +799,8 @@ TextureImporter:
       name: Bricks2_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
+        x: 0
+        y: 1280
         width: 256
         height: 256
       alignment: 0
@@ -619,8 +810,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3305410000000000800000000000000
-      internalID: 21300028
+      spriteID: 9b6f834626344d9f0800000000000000
+      internalID: -444656373335525703
       vertices: []
       indices: 
       edges: []
@@ -629,7 +820,7 @@ TextureImporter:
       name: Bricks2_15
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1280
         width: 256
         height: 256
@@ -640,8 +831,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3305410000000000800000000000000
-      internalID: 21300030
+      spriteID: f28c771e7f469fc90800000000000000
+      internalID: -7135561118789416913
       vertices: []
       indices: 
       edges: []
@@ -650,7 +841,7 @@ TextureImporter:
       name: Bricks2_16
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1280
         width: 256
         height: 256
@@ -661,8 +852,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04305410000000000800000000000000
-      internalID: 21300032
+      spriteID: 59aa0cd7d9282c7b0800000000000000
+      internalID: -5205454606355617131
       vertices: []
       indices: 
       edges: []
@@ -671,7 +862,7 @@ TextureImporter:
       name: Bricks2_17
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1280
         width: 256
         height: 256
@@ -682,8 +873,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24305410000000000800000000000000
-      internalID: 21300034
+      spriteID: dc75bfd3e90af82b0800000000000000
+      internalID: -5580064811783596083
       vertices: []
       indices: 
       edges: []
@@ -692,7 +883,7 @@ TextureImporter:
       name: Bricks2_18
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1024
         y: 1280
         width: 256
         height: 256
@@ -703,8 +894,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44305410000000000800000000000000
-      internalID: 21300036
+      spriteID: c18aeaf4787457f40800000000000000
+      internalID: 5725561147754457116
       vertices: []
       indices: 
       edges: []
@@ -713,7 +904,7 @@ TextureImporter:
       name: Bricks2_19
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 1280
         width: 256
         height: 256
@@ -724,8 +915,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64305410000000000800000000000000
-      internalID: 21300038
+      spriteID: 250ff0c5cb739a4b0800000000000000
+      internalID: -5428746593680494510
       vertices: []
       indices: 
       edges: []
@@ -734,7 +925,7 @@ TextureImporter:
       name: Bricks2_20
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 1280
         width: 256
         height: 256
@@ -745,8 +936,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84305410000000000800000000000000
-      internalID: 21300040
+      spriteID: 306309509f0ca64b0800000000000000
+      internalID: -5446328623578466813
       vertices: []
       indices: 
       edges: []
@@ -755,7 +946,7 @@ TextureImporter:
       name: Bricks2_21
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 1280
         width: 256
         height: 256
@@ -766,8 +957,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4305410000000000800000000000000
-      internalID: 21300042
+      spriteID: 793461817054c0ea0800000000000000
+      internalID: -5905269114618362985
       vertices: []
       indices: 
       edges: []
@@ -776,8 +967,8 @@ TextureImporter:
       name: Bricks2_22
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1280
+        x: 0
+        y: 1024
         width: 256
         height: 256
       alignment: 0
@@ -787,8 +978,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4305410000000000800000000000000
-      internalID: 21300044
+      spriteID: 2016fbe19e0d7a0f0800000000000000
+      internalID: -1105685483834351358
       vertices: []
       indices: 
       edges: []
@@ -797,7 +988,7 @@ TextureImporter:
       name: Bricks2_23
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1024
         width: 256
         height: 256
@@ -808,8 +999,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4305410000000000800000000000000
-      internalID: 21300046
+      spriteID: 5e79dd54cd9dc6760800000000000000
+      internalID: 7452571023479511013
       vertices: []
       indices: 
       edges: []
@@ -818,7 +1009,7 @@ TextureImporter:
       name: Bricks2_24
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1024
         width: 256
         height: 256
@@ -829,8 +1020,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05305410000000000800000000000000
-      internalID: 21300048
+      spriteID: 98822518824026ca0800000000000000
+      internalID: -6025248779453454199
       vertices: []
       indices: 
       edges: []
@@ -839,7 +1030,7 @@ TextureImporter:
       name: Bricks2_25
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1024
         width: 256
         height: 256
@@ -850,8 +1041,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25305410000000000800000000000000
-      internalID: 21300050
+      spriteID: 34b80c57f764e3b00800000000000000
+      internalID: 810162496223611715
       vertices: []
       indices: 
       edges: []
@@ -860,7 +1051,7 @@ TextureImporter:
       name: Bricks2_26
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1024
         y: 1024
         width: 256
         height: 256
@@ -871,8 +1062,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45305410000000000800000000000000
-      internalID: 21300052
+      spriteID: cc6a0fdb1d77eeef0800000000000000
+      internalID: -76992400900184372
       vertices: []
       indices: 
       edges: []
@@ -881,7 +1072,7 @@ TextureImporter:
       name: Bricks2_27
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 1024
         width: 256
         height: 256
@@ -892,8 +1083,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65305410000000000800000000000000
-      internalID: 21300054
+      spriteID: 82ad36dd563766b30800000000000000
+      internalID: 4280235377205434920
       vertices: []
       indices: 
       edges: []
@@ -902,7 +1093,7 @@ TextureImporter:
       name: Bricks2_28
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 1024
         width: 256
         height: 256
@@ -913,8 +1104,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85305410000000000800000000000000
-      internalID: 21300056
+      spriteID: 3747e12dce3bd95c0800000000000000
+      internalID: -4207008647175310221
       vertices: []
       indices: 
       edges: []
@@ -923,7 +1114,7 @@ TextureImporter:
       name: Bricks2_29
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 1024
         width: 256
         height: 256
@@ -934,8 +1125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5305410000000000800000000000000
-      internalID: 21300058
+      spriteID: a4f90991654031140800000000000000
+      internalID: 4689096404865425226
       vertices: []
       indices: 
       edges: []
@@ -944,8 +1135,8 @@ TextureImporter:
       name: Bricks2_30
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1024
+        x: 0
+        y: 768
         width: 256
         height: 256
       alignment: 0
@@ -955,8 +1146,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5305410000000000800000000000000
-      internalID: 21300060
+      spriteID: 8c3e47a5616395aa0800000000000000
+      internalID: -6171842344699763768
       vertices: []
       indices: 
       edges: []
@@ -965,7 +1156,7 @@ TextureImporter:
       name: Bricks2_31
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 768
         width: 256
         height: 256
@@ -976,8 +1167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5305410000000000800000000000000
-      internalID: 21300062
+      spriteID: 7cb20d873681cc4c0800000000000000
+      internalID: -4266007931518964793
       vertices: []
       indices: 
       edges: []
@@ -986,7 +1177,7 @@ TextureImporter:
       name: Bricks2_32
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 768
         width: 256
         height: 256
@@ -997,8 +1188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06305410000000000800000000000000
-      internalID: 21300064
+      spriteID: cfc562f28f33ede30800000000000000
+      internalID: 4530115416217246972
       vertices: []
       indices: 
       edges: []
@@ -1007,7 +1198,7 @@ TextureImporter:
       name: Bricks2_33
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 768
         width: 256
         height: 256
@@ -1018,8 +1209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26305410000000000800000000000000
-      internalID: 21300066
+      spriteID: be773e25694a32410800000000000000
+      internalID: 1451184470486120427
       vertices: []
       indices: 
       edges: []
@@ -1028,7 +1219,7 @@ TextureImporter:
       name: Bricks2_34
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1024
         y: 768
         width: 256
         height: 256
@@ -1039,8 +1230,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46305410000000000800000000000000
-      internalID: 21300068
+      spriteID: 1e89d05e6120a9dd0800000000000000
+      internalID: -2478666347558627103
       vertices: []
       indices: 
       edges: []
@@ -1049,7 +1240,7 @@ TextureImporter:
       name: Bricks2_35
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 768
         width: 256
         height: 256
@@ -1060,8 +1251,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66305410000000000800000000000000
-      internalID: 21300070
+      spriteID: a3f086edb6cd20670800000000000000
+      internalID: 8503601402279890746
       vertices: []
       indices: 
       edges: []
@@ -1070,7 +1261,7 @@ TextureImporter:
       name: Bricks2_36
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 768
         width: 256
         height: 256
@@ -1081,8 +1272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86305410000000000800000000000000
-      internalID: 21300072
+      spriteID: 2c2d3866a0d9eecf0800000000000000
+      internalID: -221066663699426622
       vertices: []
       indices: 
       edges: []
@@ -1091,7 +1282,7 @@ TextureImporter:
       name: Bricks2_37
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 768
         width: 256
         height: 256
@@ -1102,8 +1293,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6305410000000000800000000000000
-      internalID: 21300074
+      spriteID: 8d3ed94cef979dbf0800000000000000
+      internalID: -299073765116091432
       vertices: []
       indices: 
       edges: []
@@ -1112,8 +1303,8 @@ TextureImporter:
       name: Bricks2_38
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 768
+        x: 0
+        y: 512
         width: 256
         height: 256
       alignment: 0
@@ -1123,8 +1314,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6305410000000000800000000000000
-      internalID: 21300076
+      spriteID: d0590bb6289ea4220800000000000000
+      internalID: 2471044091927893261
       vertices: []
       indices: 
       edges: []
@@ -1133,7 +1324,7 @@ TextureImporter:
       name: Bricks2_39
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 512
         width: 256
         height: 256
@@ -1144,8 +1335,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6305410000000000800000000000000
-      internalID: 21300078
+      spriteID: 80b8b8a36bb3b4d70800000000000000
+      internalID: 9028375531846601480
       vertices: []
       indices: 
       edges: []
@@ -1154,7 +1345,7 @@ TextureImporter:
       name: Bricks2_40
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 512
         width: 256
         height: 256
@@ -1165,8 +1356,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07305410000000000800000000000000
-      internalID: 21300080
+      spriteID: da992b759f7b52420800000000000000
+      internalID: 2604690241049762221
       vertices: []
       indices: 
       edges: []
@@ -1175,7 +1366,7 @@ TextureImporter:
       name: Bricks2_41
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 512
         width: 256
         height: 256
@@ -1186,8 +1377,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27305410000000000800000000000000
-      internalID: 21300082
+      spriteID: 8139fc77d88db82c0800000000000000
+      internalID: -4428207706476670184
       vertices: []
       indices: 
       edges: []
@@ -1196,7 +1387,7 @@ TextureImporter:
       name: Bricks2_42
       rect:
         serializedVersion: 2
-        x: 768
+        x: 1024
         y: 512
         width: 256
         height: 256
@@ -1207,8 +1398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47305410000000000800000000000000
-      internalID: 21300084
+      spriteID: 2f6392c495f885480800000000000000
+      internalID: -8910214249059895566
       vertices: []
       indices: 
       edges: []
@@ -1217,7 +1408,7 @@ TextureImporter:
       name: Bricks2_43
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1280
         y: 512
         width: 256
         height: 256
@@ -1228,8 +1419,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67305410000000000800000000000000
-      internalID: 21300086
+      spriteID: 69ab55a5aaa755750800000000000000
+      internalID: 6293070926398732950
       vertices: []
       indices: 
       edges: []
@@ -1238,7 +1429,7 @@ TextureImporter:
       name: Bricks2_44
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1536
         y: 512
         width: 256
         height: 256
@@ -1249,8 +1440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87305410000000000800000000000000
-      internalID: 21300088
+      spriteID: 0b3568e0f17197480800000000000000
+      internalID: -8901057766365965392
       vertices: []
       indices: 
       edges: []
@@ -1259,7 +1450,7 @@ TextureImporter:
       name: Bricks2_45
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1792
         y: 512
         width: 256
         height: 256
@@ -1270,8 +1461,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7305410000000000800000000000000
-      internalID: 21300090
+      spriteID: 6161840875286f9a0800000000000000
+      internalID: -6199624524702935530
       vertices: []
       indices: 
       edges: []
@@ -1280,8 +1471,8 @@ TextureImporter:
       name: Bricks2_46
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 512
+        x: 0
+        y: 256
         width: 256
         height: 256
       alignment: 0
@@ -1291,8 +1482,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7305410000000000800000000000000
-      internalID: 21300092
+      spriteID: b1e0a5c82ac7a9a20800000000000000
+      internalID: 3069903133587672603
       vertices: []
       indices: 
       edges: []
@@ -1301,7 +1492,7 @@ TextureImporter:
       name: Bricks2_47
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 256
         width: 256
         height: 256
@@ -1312,8 +1503,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7305410000000000800000000000000
-      internalID: 21300094
+      spriteID: dcec6a1dababfafe0800000000000000
+      internalID: -1175515666176356659
       vertices: []
       indices: 
       edges: []
@@ -1322,27 +1513,6 @@ TextureImporter:
       name: Bricks2_48
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08305410000000000800000000000000
-      internalID: 21300096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bricks2_49
-      rect:
-        serializedVersion: 2
         x: 512
         y: 256
         width: 256
@@ -1354,14 +1524,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28305410000000000800000000000000
-      internalID: 21300098
+      spriteID: 7d4347f7a845d0440800000000000000
+      internalID: 4903668523096880343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_50
+      name: Bricks2_49
       rect:
         serializedVersion: 2
         x: 768
@@ -1375,14 +1545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48305410000000000800000000000000
-      internalID: 21300100
+      spriteID: 1cd28b25ee7df3410800000000000000
+      internalID: 1459122222881320385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_51
+      name: Bricks2_50
       rect:
         serializedVersion: 2
         x: 1024
@@ -1396,14 +1566,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68305410000000000800000000000000
-      internalID: 21300102
+      spriteID: 027fe80cee4bf8a70800000000000000
+      internalID: 8831476331822642976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_52
+      name: Bricks2_51
       rect:
         serializedVersion: 2
         x: 1280
@@ -1417,14 +1587,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88305410000000000800000000000000
-      internalID: 21300104
+      spriteID: 5fe5400b1db26ed60800000000000000
+      internalID: 7919065174378831605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_53
+      name: Bricks2_52
       rect:
         serializedVersion: 2
         x: 1536
@@ -1438,14 +1608,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8305410000000000800000000000000
-      internalID: 21300106
+      spriteID: 5979b70d394234b80800000000000000
+      internalID: -8411839461721401451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_54
+      name: Bricks2_53
       rect:
         serializedVersion: 2
         x: 1792
@@ -1459,14 +1629,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8305410000000000800000000000000
-      internalID: 21300108
+      spriteID: 17fe76e8a69dac120800000000000000
+      internalID: 2434997600226111345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_55
+      name: Bricks2_54
       rect:
         serializedVersion: 2
         x: 0
@@ -1480,14 +1650,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8305410000000000800000000000000
-      internalID: 21300110
+      spriteID: 8699be0f1ffe15480800000000000000
+      internalID: -8912078365181372056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_56
+      name: Bricks2_55
       rect:
         serializedVersion: 2
         x: 256
@@ -1501,14 +1671,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09305410000000000800000000000000
-      internalID: 21300112
+      spriteID: f5a61b7e7d54323b0800000000000000
+      internalID: -5538506323128128929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_57
+      name: Bricks2_56
       rect:
         serializedVersion: 2
         x: 512
@@ -1522,14 +1692,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29305410000000000800000000000000
-      internalID: 21300114
+      spriteID: 1b9613c5c3be06ed0800000000000000
+      internalID: -2422677955048019535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_58
+      name: Bricks2_57
       rect:
         serializedVersion: 2
         x: 768
@@ -1543,14 +1713,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49305410000000000800000000000000
-      internalID: 21300116
+      spriteID: 1e9d742267e7f4330800000000000000
+      internalID: 3697312864940841441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_59
+      name: Bricks2_58
       rect:
         serializedVersion: 2
         x: 1024
@@ -1564,14 +1734,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69305410000000000800000000000000
-      internalID: 21300118
+      spriteID: 6c2c968287e3c05f0800000000000000
+      internalID: -789187148901662010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_60
+      name: Bricks2_59
       rect:
         serializedVersion: 2
         x: 1280
@@ -1585,14 +1755,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89305410000000000800000000000000
-      internalID: 21300120
+      spriteID: d8385a53270bed430800000000000000
+      internalID: 3809676339374818189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_61
+      name: Bricks2_60
       rect:
         serializedVersion: 2
         x: 1536
@@ -1606,14 +1776,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9305410000000000800000000000000
-      internalID: 21300122
+      spriteID: c1ff8601c84bca0f0800000000000000
+      internalID: -1104309294948876516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bricks2_62
+      name: Bricks2_61
       rect:
         serializedVersion: 2
         x: 1792
@@ -1627,8 +1797,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9305410000000000800000000000000
-      internalID: 21300124
+      spriteID: f5d12debbe37a3940800000000000000
+      internalID: 5276657369773907295
       vertices: []
       indices: 
       edges: []
@@ -1636,7 +1806,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d4d7d035cdd995b45b6a984c12f4fe9b
     internalID: 0
     vertices: []
     indices: 

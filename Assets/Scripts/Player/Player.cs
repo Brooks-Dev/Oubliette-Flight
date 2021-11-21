@@ -19,6 +19,7 @@ public class Player : MonoBehaviour, IDamagable
     private bool _isJumping = false;
     public bool InShop;
     [SerializeField]
+    private GameObject _oubliette, _exit, _deathZone, _gateLocked;
     public int Health { get; set; }
     public bool PlayerIsDead;
 
@@ -72,8 +73,9 @@ public class Player : MonoBehaviour, IDamagable
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
-                    //Player jumps up
-                    _vertical += _jumpVelocity;
+                    float flight = 1f;
+                    if (GameManager.Instance.BootsOfFlight == true) flight = 1.5f;
+                    _vertical += flight * _jumpVelocity;
                     StartCoroutine(PlayerJumps());
                     _playerAnim.Jumping(_isJumping);
                 }
@@ -83,7 +85,9 @@ public class Player : MonoBehaviour, IDamagable
                 if (CrossPlatformInputManager.GetButtonDown("B_Button"))
                 {
                     //Player jumps up
-                    _vertical += _jumpVelocity;
+                    int flight = 1;
+                    if (GameManager.Instance.BootsOfFlight == true) flight = 2;
+                    _vertical += flight * _jumpVelocity;
                     StartCoroutine(PlayerJumps());
                     _playerAnim.Jumping(_isJumping);
                 }
@@ -125,7 +129,7 @@ public class Player : MonoBehaviour, IDamagable
 
     public void GetDiamond(int count)
     {
-        diamonds += count;
+        diamonds += count * 10;
         UIManager.Instance.UpdateGemCount(diamonds);
     }
 
@@ -139,6 +143,7 @@ public class Player : MonoBehaviour, IDamagable
             _playerAnim.PlayerDies();
             PlayerIsDead = true;
             _rigidbody.velocity = new Vector2(0, _vertical);
+            _deathZone.SetActive(true);
             StartCoroutine(ReturnToMainMenu());
         }
         UIManager.Instance.UpdateLives(Health);
@@ -146,7 +151,38 @@ public class Player : MonoBehaviour, IDamagable
 
     private IEnumerator ReturnToMainMenu()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("Main_Menu");
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Oubliette2") && GameManager.Instance.BootsOfFlight == false)
+        {
+            _oubliette.SetActive(true);
+            StartCoroutine(ReturnToMainMenu());
+        }
+        else if (other.CompareTag("Oubliette"))
+        {
+            _oubliette.SetActive(true);
+            StartCoroutine(ReturnToMainMenu());
+        }
+        else if (other.CompareTag("Death Zone"))
+        {
+            _deathZone.SetActive(true);
+            StartCoroutine(ReturnToMainMenu());
+        }
+        else if (other.CompareTag("Exit"))
+        {
+            if (GameManager.Instance.HasKeyCastle == true)
+            {
+                _exit.SetActive(true);
+                StartCoroutine(ReturnToMainMenu());
+            }
+            else
+            {
+                _gateLocked.SetActive(true);
+            }
+        }
     }
 }
