@@ -74,14 +74,10 @@ public class Shop : MonoBehaviour
                     default:
                         break;
                 }
-                if (_selectedItem == 3)
-                {
-                    GameManager.Instance.HasKeyCastle = true;
-                }
-                Debug.Log("Bought item " + _selectedItem);
                 _player.diamonds -= ItemCost[_selectedItem];
                 UIManager.Instance.UpdateGemCount(_player.diamonds);
                 UIManager.Instance.OpenShop(_player.diamonds);
+                AudioManager.Instance.BuyItemFromShop();
             }
             else
             {

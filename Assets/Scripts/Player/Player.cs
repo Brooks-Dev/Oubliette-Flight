@@ -123,6 +123,7 @@ public class Player : MonoBehaviour, IDamagable
     IEnumerator PlayerJumps()
     {
         _isJumping = true;
+        AudioManager.Instance.PlayerJump();
         yield return new WaitForSeconds(0.1f);
         _isJumping = false;
     }
@@ -131,6 +132,7 @@ public class Player : MonoBehaviour, IDamagable
     {
         diamonds += count * 10;
         UIManager.Instance.UpdateGemCount(diamonds);
+        AudioManager.Instance.GemPickup();
     }
 
     public void Damage(int pain)

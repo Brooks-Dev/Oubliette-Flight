@@ -78,7 +78,6 @@ public class PlayerAnimation : MonoBehaviour
                 _swordRenderer.transform.localEulerAngles = new Vector3(75f, 50f, -150f);
             }
             _swordAnimator.SetBool("Jump", false);
-
         }
         else
         {
@@ -106,6 +105,14 @@ public class PlayerAnimation : MonoBehaviour
         }
         if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
+            if (GameManager.Instance.FlamingSword == true)
+            {
+                AudioManager.Instance.SwingSwordFlame();
+            }
+            else
+            {
+                AudioManager.Instance.SwingSword();
+            }
             _swordAnimator.SetTrigger("SwordAnimation");
             _animator.SetTrigger("Attack");
         }
@@ -113,11 +120,16 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Jumping(bool isJumping)
     {
+        if(_animator.GetBool("Jump") == true)
+        {
+            AudioManager.Instance.PlayerLands();
+        }
         _animator.SetBool("Jump", isJumping);
     }
 
     public void PlayerDies()
     {
         _animator.SetTrigger("Death");
+        AudioManager.Instance.PlayerDied();
     }
 }
