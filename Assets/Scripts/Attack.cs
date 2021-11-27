@@ -26,7 +26,7 @@ public class Attack : MonoBehaviour
 
     private IEnumerator SwingHitCooldown()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.94f);
         _hitInSwing = false;
     }
 }

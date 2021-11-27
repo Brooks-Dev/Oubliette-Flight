@@ -29,7 +29,7 @@ public class MossGiant : Enemy, IDamagable
                 var gem = Instantiate(diamond, this.transform.position, Quaternion.identity);
                 gem.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-2f, 2f), 1f);
             }
-            Destroy(this);
+            DeathAudio();
         }
         anim.SetTrigger("Hit");
         anim.SetBool("InCombat", true);
